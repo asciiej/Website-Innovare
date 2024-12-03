@@ -1,0 +1,72 @@
+/* scr/componets/Header.css */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FCFCFC;
+    padding: 0px 50px;
+}
+
+.logo img{
+    height: 120px;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+
+.menu li{
+    margin-left: 25px;
+    position: relative;
+}
+
+.menu a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.menu-button {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px;
+    position: relative;
+}
+  
+.menu-button:hover::after {
+    width: 100%;
+    right: 0;
+}
+  
+.menu-button::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    right: 0;
+    position: absolute;
+    background: linear-gradient(to left, #000000, #000000 100%);
+    transition: width .5s ease 0s, right .5s ease 0s;
+    width: 0;
+}
+
+/* Botão de contato */
+.menu .contact-button{
+    display: inline-block;
+    padding: 12px 15px; 
+    color: rgb(0, 0, 0); 
+    border: 1px, solid #000000;
+    border-radius: 10px; 
+    transition: background-color 0.5s;
+}
+
+.menu .contact-button:hover{
+    color: #fcfcfc; 
+    background-color: #000000;
+    border-radius: 8px; 
+}
