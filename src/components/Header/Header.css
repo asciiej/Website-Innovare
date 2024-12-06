@@ -1,11 +1,13 @@
 /* scr/componets/Header.css */
 
 .header{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #FCFCFC;
-    padding: 0px 50px;
+    padding: 0px 40px;
+    text-transform: uppercase;
 }
 
 .logo img{
