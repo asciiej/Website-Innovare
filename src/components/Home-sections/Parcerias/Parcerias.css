@@ -1,0 +1,34 @@
+.parceiros-container{
+    text-align: center;
+    padding: 56px 72px;
+    background-color: #fcfcfc;
+}
+
+.parceiros-container h2{
+    font-size: 32px;
+    color: #224A6D;
+    margin-bottom: 24px;
+    font-weight: 750;
+}
+
+.logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 72px;
+}
+
+.parceiro{
+    width: 110px;
+    height: auto;
+}
+
+.parceiro img{
+    width: 100%;
+}
+
+/*Para deixar o tamanho mais regular*/
+#nucleo{
+    width: 250px;
+}
