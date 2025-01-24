@@ -10,10 +10,11 @@
     flex-direction: column;
     text-align: center;
     gap: 2em;
+    transition: .7s ease 0s, right .5s ease 0s;
 }
 
 .PortifolioElement:hover {
-    box-shadow: 0 0 20px 10px #fff1a0;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .ref {

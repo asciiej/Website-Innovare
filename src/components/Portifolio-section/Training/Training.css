@@ -1,4 +1,4 @@
-.training-box{
+.training-box {
   background-color: #fcfcfc;
   padding: 1.2em 4em;
   display: flex;
@@ -7,93 +7,126 @@
   align-items: center;
 }
 
-.title-training{
-  font-size: 32px;
+.title-training {
+  font-size: 2rem;
   color: #232323;
-  margin-bottom: 24px;
+  margin-bottom: 1.5em;
   font-weight: 750;
-  margin-bottom: 1em;
+  text-align: center;
 }
 
-
 .training-container {
-    background-color: #fcfcfc;
-    display: flex;
-    justify-content: center;
+  background-color: #fcfcfc;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  width: 100%;
+  padding: 1em;
+}
 
-    gap: 3.5em;
-  }
-  
+.training-menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+  width: 25%;
+  height: fit-content;
+}
+
+.training-menu-item {
+  background-color: #761436;
+  color: #fdbcd3;
+  font-size: 0.9em;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 8px;
+  padding: 0.8em;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.training-menu-item:hover {
+  background-color: #931844;
+  transform: scale(1.05);
+}
+
+.training-menu-item.active {
+  background-color: #244b6d;
+  color: #c2e3ff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.training-menu-image {
+  width: 75%;
+  border-radius: 8px;
+  margin-bottom: 0.7em;
+}
+
+.training-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  gap: 1em;
+}
+
+.training-detail-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.training-description {
+  background-color: #244b6d;
+  color: #fff;
+  border-radius: 8px;
+  padding: 1.5em;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.training-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.training-text {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 1000px) {
   .training-menu {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1em;
-    width: 25%;
-    height: fit-content;
-  }
-  
-  .training-menu-item {
-    background-color: #761436;
-    color: #fdbcd3;
-    font-size: 0.9em;
-    font-weight: 500;
-    text-align: center;
-    border-radius: 8px;
-    padding: 0.8em;
-    cursor: pointer;
-    transition: transform 0.2s;
-    background-color: 0.2s;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .training-menu-item:hover {
-    background-color: #931844;
-    transform: scale(1.05);
-  }
-  
-  .training-menu-item.active {
-    background-color: #244B6D;
-    color: #c2e3ff;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  }
-  
-  .training-menu-image {
-    width: 75%;
-    border-radius: 8px;
-    margin-bottom: 0.7em;
-  }
-  
-  .training-details {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 55%;
-    gap: 0.6em;
-  }
-  
-  .training-detail-image {
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 0.5em;
     width: 100%;
-    border-radius: 8px;
+    padding: 0.5em 0;
   }
-  
-  .training-description {
-    background-color: #244B6D;
-    color: #fff;
-    border-radius: 8px;
-    padding: 2em;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+  .training-menu-item {
+    flex: 0 0 auto;
+    min-width: 120px;
+    max-width: 150px;
   }
-  
-  .training-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
+
+  .training-menu-image {
+    width: 100%;
   }
-  
-  .training-text {
-    font-size: 16px;
-    line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+  .training-menu-item {
+    min-width: 100px;
   }
+
+  .training-menu-image {
+    width: 90%;
+  }
+}

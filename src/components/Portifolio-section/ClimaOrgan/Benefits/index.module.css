@@ -4,9 +4,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    opacity: 0; /* Start hidden */
-    transform: translateX(-50%); /* Start off-screen to the left */
-    transition: opacity 1s, transform 1s; /* Smooth transition */
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: opacity 1s, transform 1s;
 }
 
 .benefitsContainer.animate {
@@ -23,11 +23,44 @@
 
 .benefitsContainer p {
     width: 100%;
-    text-align: left;
+    text-align: center;
 }
 
 .benefitsContainer img {
     height: 50px;
     width: 60px;
     padding-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .benefitsContainer {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 1024px) {
+    .benefitsContainer img {
+        height: 60px;
+        width: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .benefitsContainer {
+        width: 100%; 
+        flex-direction: column;
+        gap: 10px; 
+        text-align: center;
+    }
+
+    .benefitsContainer img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .benefitsContainer p {
+        font-size: 0.85rem;
+    }
 }

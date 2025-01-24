@@ -2,6 +2,7 @@ import TypeService from "./../TypeServiceNS"
 import styles from "./index.module.css"
 import img from "./../../../../assets/images/home/liderarr.jpg"
 import svg from "./../../../../assets/images/home/arrow.svg"
+import { Link } from 'react-router-dom';
 
 export default function SomeServicesNS(){
     return(<>
@@ -11,11 +12,13 @@ export default function SomeServicesNS(){
         <TypeService service="Plano desenvolvimento individual" src={img} />
         <TypeService service="Recrutamento e seleção" src={img} />
         <div className={styles.PortifolioElement}>
-            <h1>E muitos outros</h1>
-            <a href="" className={styles.ref}>
-                <p>Portifólio</p>
-                <img src={svg}/>
-            </a>
+            <h1>Confira todos:</h1>
+            <Link to='/portfolio'>
+                <a href="" className={styles.ref}>
+                    <p>Portfólio</p>
+                    <img src={svg}/>
+                </a>
+            </Link>
         </div>
     </>)
 }

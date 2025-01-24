@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin: -.2em 0;
 }
 
 .climaTextContainer, .climaBenefitsContainer{
@@ -21,6 +22,11 @@
     color: white;
     font-size: 2rem;
     font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.climaTextContainer p{
+    margin-bottom: 16px;
 }
 
 .climaTextWrapper{
@@ -45,13 +51,14 @@
     gap: 20px;
     background-color: #D5E0E8;
     border-radius: 30px;
-    box-shadow: 3px -6px 0px 0px rgba(41, 43, 45, 0.8);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .climaBenefitsWrapper h2 {
     color: #224A6D;
     font-size: 1.6rem;
     padding-top: 10px;
+    text-align: center;
 }
 
 .climaBenefitsWrapper h2,
@@ -102,4 +109,66 @@
 
 .customshapedividerbottom1736208382 .shapefill2 {
     fill: #224A6D;
+}
+
+@media (max-width: 768px) {
+    .climaOrganizacionalcontainer {
+        flex-direction: row;
+        height: 70vh;
+    }
+
+    .climaTextContainer, .climaBenefitsContainer {
+        width: 45%;
+    }
+
+    .climaTextContainer h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .climaOrganizacionalcontainer {
+        justify-content: space-evenly;
+    }
+
+    .climaTextContainer h1 {
+        font-size: 2.5rem;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .climaOrganizacionalcontainer {
+        flex-direction: column;
+        height: auto;
+        padding: 1em;
+    }
+
+    .climaTextContainer, .climaBenefitsContainer {
+        width: 100%;
+        padding: 0;
+        gap: 15px;
+    }
+
+    .climaTextContainer h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .climaTextWrapper {
+        width: 100%;
+        gap: 10px;
+        font-size: 0.9rem;
+    }
+
+    .climaBenefitsWrapper {
+        width: 100%;
+        gap: 10px;
+        padding: 1em;
+    }
+
+    .climaBenefitsWrapper h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
 }

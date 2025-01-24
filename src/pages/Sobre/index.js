@@ -12,9 +12,9 @@ function Sobre() {
     <div className="Sobre">
       <Header />
       <Banner />
+      <Historia />
       <TimeLine />
       <Mvv />
-      <Historia />
       <Team />
       <Footer />
     </div>

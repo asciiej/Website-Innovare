@@ -11,6 +11,7 @@ export default function OrientacaoProfissional() {
     <section className={styles.orientacaoProfissionalSection}>
         <div className={styles.orientacaoProfissionalContainer}>
             <div className={styles.OrientaçãoBanner}>
+                <h2>Orientação Profissional</h2>
                 <div className={styles.OrientaçãoImgs}>
                     <img src={img1} />
                     <img src={img2} />
@@ -19,7 +20,6 @@ export default function OrientacaoProfissional() {
                     <img src={img5} />
                     <img src={img6} />
                 </div>
-                <h2>Orientação Profissional</h2>
             </div>
             <div className={styles.OrientaçãoDescription}>
                 <h2>Por que orientação profissional ?</h2>

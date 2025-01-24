@@ -3,7 +3,7 @@ import styles from './FeedBack.module.css';
 
 import linkedin from '../../../assets/images/footer/linkedin.svg';
 import facebook from '../../../assets/images/footer/facebook.svg';
-import seta from '../../../assets/images/feedback/seta.svg';
+import seta from '../../../assets/images/home/arrow-right-white.svg';
 import { Link } from 'react-router-dom';
 
 function FeedBack() {
@@ -55,12 +55,7 @@ function FeedBack() {
                         <span className={styles.texto}>
                             Abrir nosso Portfólio
                         </span>
-                        <span>
-                            <img
-                                src={seta} alt='Seta'
-                                className={styles.seta}
-                            />
-                        </span>
+                        <img src={seta} />
                     </button>
                 </Link>
             </div>
