@@ -5,23 +5,23 @@ function Mvv(){
     return(
         <div className='mvv'>
             <h2>Nossa <span class="h2-colorido">essência</span>, nossa cultura, nossos valores.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing</p>
-            <div className='cards-container'>
-                <div className='cards'>
-                    <div className='card'>
+            <p>Innovare - Consultoria Júnior em Psicologia</p>
+            <div className='cards-container-mvv'>
+                <div className='cards-mvv'>
+                    <div className='card-mvv'>
                         <h3>Nossa Missão</h3>
                         <h4>Por que existimos?</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.Aliquam in hendrerit.</p>
+                        <p>Capacitar profissionais empreendedores e qualificados, através da experiência prática, na área de Psicologia Organizacional e do Trabalho que possam impactar o meio empresarial no Brasil todo.</p>
                     </div>
-                    <div className='card'>
+                    <div className='card-mvv'>
                         <h3>Nossa Visão</h3>
                         <h4>Onde vamos chegar?</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.Aliquam in hendrerit.</p>
+                        <p>Ser uma empresa júnior de referência no Brasil pelos serviços de excelência, com membros capacitados, engajados, direcionados para o crescimento, impactando clientes do mercado sênior e MEJ.</p>
                     </div>
-                    <div className='card'>
+                    <div className='card-mvv'>
                         <h3>Nossos Valores</h3>
                         <h4>A maneira como agimos</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.Aliquam in hendrerit.</p>
+                        <p>Ética, Empatia, Motivação, Cooperatividade, Desenvolvimento de Pessoas, Diversidade, Responsabilidade e Comprometimento.</p>
                     </div>
                 </div>
             </div>

@@ -32,3 +32,24 @@
 #nucleo{
     width: 250px;
 }
+
+@media screen and (max-width: 768px){
+    .logos{
+        padding: 0px 0px;
+    }
+
+    .parceiro{
+        width: 250px;
+    }
+
+    #nucleo{
+        width: 500px;
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .logos{
+        transform: scale(1.4);
+    }
+}

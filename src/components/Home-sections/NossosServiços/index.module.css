@@ -1,0 +1,50 @@
+.NossosServicosContainer{
+    height: 90vh;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+}
+
+.ServicesWrapper{
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 3em;
+    font-size: .72em;
+    color: #fff;
+}
+
+@media (max-width: 1200px) {
+    .NossosServicosContainer{
+        height: 105vh;
+    }
+
+    .ServicesWrapper{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .NossosServicosContainer{
+        height: 220vh;
+        margin-bottom: 100px;
+    }
+
+    .ServicesWrapper{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .NossosServicosContainer{
+        margin-bottom: 200px;
+    }
+}

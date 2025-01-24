@@ -1,0 +1,90 @@
+.Item{
+    width: 85%;
+    height: 105%;
+    max-height: 22em;
+    background-color: #7b1d3f;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: .75em;
+}
+
+.Item:hover{
+    box-shadow: 0 0 20px 10px #fff1a0;
+}
+
+.ImgStyle{
+    width: 70%;
+    height: 65%;
+    border-radius: 20px;
+}
+
+@media (max-width: 1300px) {
+    .Item{
+        width: 100%;
+        height: 105%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .Item {
+        width: 85%;
+        height: 105%;
+        padding: 1em;
+    }
+
+    .Item:hover .ImgStyle{
+        transform: scale(1.15);
+        transition: .5s ease-in-out;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .Item {
+        width: 100%;
+        height: 105%;
+        padding: 1em;
+    }
+
+    .Item:hover .ImgStyle{
+        transform: scale(1.15);
+        transition: .5s ease-in-out;
+    }
+
+    .ImgStyle {
+        width: 70%;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .Item {
+        width: 95%;
+        height: auto;
+        max-height: none;
+        padding: 20px;
+    }
+
+    .ImgStyle {
+        width: 90%;
+        height: auto;
+    }
+}
+
+/* @media (max-width: 480px) {
+    .Item {
+        width: 100%;
+        height: auto;
+        max-height: none;
+    }
+
+    .ImgStyle {
+        width: 100%;
+        height: auto;
+    }
+} */

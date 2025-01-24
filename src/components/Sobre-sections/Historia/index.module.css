@@ -1,0 +1,87 @@
+.histcontainer{
+    position: relative;
+    margin: -.3em 0;
+}
+
+.historia{
+    text-align: center;
+    background: #7B1D3F;
+    padding: 3rem 0rem;
+}
+
+.historia h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.textinho{
+    font-style: italic;
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 0.4rem;
+    line-height: 1.5;
+}
+
+.texto{
+    max-width: 50rem;
+    margin: 1rem auto; 
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: 1.5rem;
+    line-height: 1.5;
+}
+
+.destaque{
+    font-weight: 500;
+    color: black;
+}
+
+.contatolink {
+    text-decoration: none;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.contatobutton {
+    margin-top: 2rem;
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+    border: 0.2rem solid #000;
+    border-radius: 30rem;
+    padding: 0.8rem 3rem;
+    color: black; 
+    gap: 1rem; 
+    letter-spacing: 0.0625rem; 
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+
+.contatobutton:hover {
+    background-color: #be3f6d; 
+}
+
+.customshapedividertop{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: scaleY(-1);
+}
+
+.customshapedividertop svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 9.375rem;
+}
+
+.shapefill {
+    fill: #7B1D3F;
+}

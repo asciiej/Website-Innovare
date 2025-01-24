@@ -44,3 +44,31 @@
     text-align: center;
     font-size: 18px;
 }
+
+@media screen and (max-width: 768px){
+    .footer{
+        padding: 24px 24px 24px 24px;
+    }
+
+    .footer-principal{
+        flex-direction: column;
+    }
+
+    .footer-logo{
+        width: 240px;
+        transform: translateX(-15px);
+    }
+
+    .redes-sociais{
+        margin-top: 30px;
+    }
+
+    .redes-sociais img{
+        width: 35px;
+    }
+
+    .footer-divisoria{
+        margin: 20px 0;
+    }
+    
+}

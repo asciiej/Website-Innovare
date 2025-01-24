@@ -1,0 +1,78 @@
+.teamSection {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teamContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 80%;
+    height: 80%;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 20px solid #153D5C;
+    cursor: pointer;
+}
+
+.invert {
+    transform: rotate(180deg);
+}
+
+.teamWrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    width: 85%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.teamWrapper > div:nth-child(1) {
+    visibility: hidden;
+    margin: -3%;
+}
+
+.team{
+    height: 100%;
+}
+
+.bigger {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px){
+    .teamWrapper{
+        width: 100%;
+    }
+
+    .teamWrapper > div:first-child{
+        position: absolute;
+        z-index: 0;
+    }
+    
+    .teamWrapper > div:nth-child(2) {
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .teamContainer{
+        width: 95%;
+    }
+
+    .teamWrapper > div:nth-child(2) {
+        margin-left: 3.5%;
+    }
+}

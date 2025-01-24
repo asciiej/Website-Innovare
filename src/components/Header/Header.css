@@ -1,6 +1,6 @@
 /* scr/componets/Header.css */
 
-.header{
+.header {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -10,16 +10,16 @@
     text-transform: uppercase;
 }
 
-.logo img{
+.logo img {
     height: 120px;
 }
 
-.menu ul{
+.menu ul {
     display: flex;
     list-style: none;
 }
 
-.menu li{
+.menu li {
     margin-left: 25px;
     position: relative;
 }
@@ -30,6 +30,11 @@
     color: #000000;
 }
 
+#menu-toggle,
+.menu-display {
+    display: none;
+}
+
 .menu-button {
     color: #fff;
     text-transform: uppercase;
@@ -38,12 +43,12 @@
     padding: 12px;
     position: relative;
 }
-  
+
 .menu-button:hover::after {
     width: 100%;
     right: 0;
 }
-  
+
 .menu-button::after {
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
@@ -58,17 +63,173 @@
 }
 
 /* Botão de contato */
-.menu .contact-button{
+.menu .contact-button {
     display: inline-block;
-    padding: 10px 15px; 
-    color: rgb(0, 0, 0); 
-    border: 1px, solid #000000;
-    border-radius: 12px; 
+    padding: 10px 15px;
+    color: rgb(0, 0, 0);
+    border: 1px solid #000000;
+    border-radius: 12px;
     transition: background-color 0.5s;
 }
 
-.menu .contact-button:hover{
-    color: #fcfcfc; 
+.menu .contact-button:hover {
+    color: #fcfcfc;
     background-color: #000000;
-    border-radius: 12px; 
+    border-radius: 12px;
+}
+
+@media screen and (max-width: 900px) {
+    .header {
+        padding: 0px 24px;
+    }
+
+    .menu ul {
+        display: none;
+    }
+
+    #menu-toggle {
+        display: block;
+        position: absolute;
+        appearance: none;
+        border: 3px solid #000000;
+        padding: 26px;
+        border-radius: 10px;
+        right: 6%;
+        top: 30px;
+        z-index: 999;
+    }
+
+
+    #menu-toggle:checked+ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 0%;
+        top: 85px;
+        width: 100vw;
+        height: 28%;
+        z-index: 999;
+    }
+
+    #menu-toggle:checked+ul li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        border-top: 1px solid #000000;
+        background-color: #FCFCFC;
+    }
+
+    #menu-toggle:checked+ul li:last-child {
+        border-bottom: 1px solid #000000;
+    }
+
+    .menu-display {
+        display: block;
+        position: absolute;
+        right: 6.8%;
+        top: 38px;
+    }
+
+    .menu-icon {
+        width: 42px;
+        height: 6px;
+        background-color: black;
+        margin: 6px 0;
+    }
+
+    .contact-button,
+    .menu-button {
+        width: 100%;
+    }
+
+    .menu .contact-button {
+        border: 0 transparent solid;
+    }
+
+    .menu-button:hover::after {
+        width: 100%;
+        right: 0;
+    }
+
+    .menu-button::after {
+        height: 0px;
+    }
+
+    .menu .contact-button:hover {
+        color: #000;
+        background-color: #fcfcfc;
+    }
+
+    .menu .contact-button:hover::after,
+    #menu-toggle:checked+ul li:hover::after {
+        width: 100%;
+        right: 0;
+    }
+
+    .menu .contact-button::after,
+    #menu-toggle:checked+ul li::after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        right: 0;
+        position: absolute;
+        background: linear-gradient(to left, #000000, #000000 100%);
+        transition: width .5s ease 0s, right .5s ease 0s;
+        width: 0;
+    }
+}
+
+@media screen and (max-height: 1000px) {
+    #menu-toggle:checked+ul {
+        top: 110px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logo img {
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    .menu-display {
+        top: 30px;
+        right: 7.4%;
+    }
+
+    #menu-toggle {
+        top: 24px;
+    }
+
+    #menu-toggle:checked+ul {
+        top: 110px;
+        right: 4%;
+    }
+
+    #menu-toggle:checked+ul li {
+        padding: 12px 0;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .header {
+        padding: 10px 0 0 15px;
+    }
+
+    .logo img {
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    #menu-toggle {
+        top: 22px;
+    }
+
+    #menu-toggle:checked+ul {
+        top: 140px;
+        right: 3%;
+    }
 }

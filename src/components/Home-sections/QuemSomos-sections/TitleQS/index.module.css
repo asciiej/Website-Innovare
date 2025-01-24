@@ -1,0 +1,12 @@
+.Title{
+    color: #e6e6e6;
+    font-size: 2.5em;
+    padding-left: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 768px){
+    .Title{
+        font-size: 1.8em;
+    }
+}

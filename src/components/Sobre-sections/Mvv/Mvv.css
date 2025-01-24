@@ -19,11 +19,11 @@
     margin-bottom: 15px;
 }
 
-.cards-container{
+.cards-container-mvv{
     padding: 50px 24px;
 }
 
-.cards{
+.cards-mvv{
     width: 100%;
     max-width: 800px;
     background-color: #F5E5EB;
@@ -35,12 +35,12 @@
     margin: 0 auto;
 }
 
-.card{
+.card-mvv{
     display: flex;
     flex-direction: column;
     align-items: start;
     text-align: start;
-    justify-content: center;
+    justify-content: flex-start;
     background-color: #fcfcfc;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     border-radius: 8px;
@@ -51,18 +51,44 @@
     min-height: 270px;
 }
 
-.card h3{
+.card-mvv h3{
     font-size: 24px;
     margin-bottom: 3px;
 }
 
-.card h4{
+.card-mvv h4{
     font-size: 18px;
     margin-bottom: 24px;
     font-style: italic;
     font-weight: 400;
 }
 
-.card p{
-    font-size: 16px
+.card-mvv p{
+    font-size: 16px;
+    margin-top: 0;
+}
+
+@media screen and (max-width: 1100px){
+    .cards-mvv{
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .cards-mvv{
+        border-radius: 20px;
+    }
+
+    .card-mvv{
+        min-width: 250px;
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .mvv h2{
+        font-size: 2.4rem;
+        padding-bottom: 20px;
+    }
 }

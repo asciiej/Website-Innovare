@@ -1,11 +1,14 @@
 import React from 'react';
 import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import Form from '../../components/Contato-sections/Form';
 
 function Contato() {
   return (
     <div className="Contato">
       <Header />
-      <h2>Entre em contato</h2>
+      <Form />
+      <Footer />
     </div>
   );
 }

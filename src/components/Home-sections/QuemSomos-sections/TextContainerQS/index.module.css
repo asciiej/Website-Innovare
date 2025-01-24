@@ -1,0 +1,97 @@
+.TextWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+}
+
+.TextWrapper div {
+    width: 100%;
+    font-size: 1.4em;
+    margin: 10px 0;
+}
+
+.InfoText>p {
+    margin-bottom: 20px;
+}
+
+.Indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.Indicators div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.num {
+    font-size: 1em;
+}
+
+.textNum {
+    font-size: .7em;
+}
+
+@media screen and (max-width: 1300px) {
+    .num {
+        font-size: 1em;
+    }
+
+    .textNum {
+        font-size: .58em;
+    }
+}
+@media screen and (max-width: 900px) {
+    .TextWrapper div {
+        text-align: justify;
+    }
+
+    .num {
+        font-size: 1em;
+    }
+
+    .textNum {
+        font-size: .7em;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .TextWrapper div {
+        text-align: justify;
+        font-size: 1.35em;
+    }
+
+    .num {
+        font-size: 1em;
+    }
+
+    .Indicators{
+        gap: 40px;
+    }
+
+    .textNum {
+        text-align: center;
+        font-size: .65em;
+        margin-top: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 430px) {
+    .TextWrapper div {
+        font-size: 1.25em;
+    }
+
+    .num {
+        font-size: 1.2em;
+    }
+
+    .textNum {
+        font-size: .7em;
+        width: 160%;
+    }
+}

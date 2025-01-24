@@ -12,6 +12,12 @@ function Header() {
                 </Link>
             </div>
             <nav className='menu'>
+                <div className='menu-display'>
+                    <div className='menu-icon'></div>
+                    <div className='menu-icon'></div>
+                    <div className='menu-icon'></div>
+                </div>
+                <input type='checkbox' id='menu-toggle' />
                 <ul>
                     <li><Link to='/' className='menu-button'>Home</Link></li>
                     <li><Link to='/portfolio' className='menu-button'>Portfolio</Link></li>

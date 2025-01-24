@@ -1,0 +1,53 @@
+.textWrapper{
+    flex-direction: column;
+    gap: 30px;
+}
+.textWrapper h1{
+    height: 10%;
+    font-size: 2.5em;
+    color: rgb(34, 74, 109);
+}
+.textDescription{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.textDescription h2{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(34, 74, 109);
+}
+
+.textDescription span, .textDescription ul li{
+    color: #fff;
+    background-color: rgb(34, 74, 109, .8);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.textDescription span p{
+    text-align: justify;
+}
+
+.textDescription ul{
+    list-style: none;
+    width: 120%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    transform: translateX(-8%);
+}
+
+.textDescription ul li{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
