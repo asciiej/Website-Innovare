@@ -5,6 +5,8 @@
     align-items: center;
     justify-content: space-evenly;
     padding-top: 100px;
+    margin-bottom: -2rem;
+    background-color: #fcfcfc;
 }
 
 .introWorkshopContainer > div, .introWorkshopContainer > div + div {

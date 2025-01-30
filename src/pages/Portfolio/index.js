@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../../components/Header';
 import Banner from './../../components/Portifolio-section/Banner' 
 import IntroWorkshop from './../../components/Portifolio-section/IntroWorkshop'
+import Workshops from './../../components/Portifolio-section/Workshops'
 import RecruSelecao from '../../components/Portifolio-section/Recru&Seleção';
 import ClimaOrganizacional from '../../components/Portifolio-section/ClimaOrgan';
 import OrientacaoProfissional from '../../components/Portifolio-section/OrientaçãoProfissional';
@@ -14,6 +15,7 @@ function Portfolio() {
       <Header />
       <Banner />
       <IntroWorkshop />
+      <Workshops />
       <RecruSelecao />
       <Training />
       <ClimaOrganizacional />
