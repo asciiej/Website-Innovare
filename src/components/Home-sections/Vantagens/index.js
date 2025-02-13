@@ -6,7 +6,7 @@ function Vantagens(){
         <div className='vantagens'>
              <h1>Vantagens de uma Empresa Júnior</h1>
              <div className='containers'>
-                <div className='cards'>
+                <div className='cards-vant'>
                     <div className='cards-vantagens'>
                         <h3 className='subtitulos'>Investimento em Educação</h3>
                         <p>Ao contratar uma Empresa Júnior, o cliente contribui para o desenvolvimento profissional de futuros líderes e especialistas. 

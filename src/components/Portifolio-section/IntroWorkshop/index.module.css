@@ -16,3 +16,42 @@
     align-items: center;
     justify-content: center;
 }
+
+
+@media (max-width: 1024px) {
+    .introWorkshopContainer {
+        flex-direction: column;
+        height: auto;
+        padding-top: 80px;
+    }
+
+    .introWorkshopContainer > div, 
+    .introWorkshopContainer > div + div {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .introWorkshopContainer {
+        padding-top: 80px;
+    }
+
+    .introWorkshopContainer > div, 
+    .introWorkshopContainer > div + div {
+        width: 90%;
+    }
+}
+
+/* Celulares (até 480px) */
+@media (max-width: 480px) {
+    .introWorkshopContainer {
+        padding-top: 80px;
+    }
+
+    .introWorkshopContainer > div, 
+    .introWorkshopContainer > div + div {
+        width: 100%;
+    }
+}

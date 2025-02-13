@@ -25,27 +25,46 @@
     font-size: 0.8rem;
 }
 
-@media screen and (max-width: 1100px){
+@media screen and (min-width: 1401px) and (max-width: 1600px){
     .cardContainer{
-        width: 50%;
-    }   
+        overflow: hidden;
+        height: 78vh;
+    }
 }
 
-@media screen and (max-width: 768px){
-    .cardContainer{
-        width: 400px;
-    }   
+@media screen and (max-width: 1400px) {
+    .cardContainer {
+        width: 22rem;
+        height: 84vh;
+    }
 }
 
-@media screen and (max-width: 600px){
-    .cardContainer{
-        width: 300px;
-    }   
+@media screen and (max-width: 1024px) {
+    .cardContainer {
+        width: 70%;
+        height: 65%;
+    }
+
+    .cardText{
+        font-size: 0.9rem;
+    }
 }
 
-@media screen and (max-width: 450px){
-    .cardContainer{
-        width: 290px;
+@media screen and (max-width: 768px) {
+    .cardContainer {
+        width: 25rem;
+        height: 55%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cardContainer {
+        width: 22rem;
         height: 90%;
-    }   
+        overflow: hidden;
+    }
+
+    .cardText{
+        font-size: 0.7rem;
+    }
 }

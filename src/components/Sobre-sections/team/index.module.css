@@ -67,27 +67,53 @@
     transition: transform 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 768px){
-    .teamWrapper{
-        width: 100%;
-    }
-
-    .teamWrapper > div:first-child{
-        position: absolute;
-        z-index: 0;
-    }
-    
-    .teamWrapper > div:nth-child(2) {
-        margin-left: 5%;
+@media screen and (min-width: 1401px) and (max-width: 1600px){
+    .teamContainer{
+        overflow: hidden;
+        height: 100%;
     }
 }
 
-@media screen and (max-width: 450px){
-    .teamContainer{
+@media screen and (max-width: 1400px) {
+    .teamContainer {
+        width: 50rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .teamContainer {
+        width: 90%;
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .teamWrapper {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow-x: hidden;
+    }
+    
+    .arrow {
+        display: none; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .teamWrapper {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .teamContainer {
         width: 95%;
     }
 
-    .teamWrapper > div:nth-child(2) {
-        margin-left: 3.5%;
+    .teamWrapper {
+        gap: 20px;
+        padding-bottom: 5px;
     }
+
 }
