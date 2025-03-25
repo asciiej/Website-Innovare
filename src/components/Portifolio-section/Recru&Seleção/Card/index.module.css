@@ -57,3 +57,36 @@
     border: #967171 2px solid;
     border-radius: 15px;
 }
+
+@media screen and (max-width: 1120px) {
+    .CardWrapper{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .CardWrapper{
+        width: 70%;
+        height: 45%;
+    }
+
+    .CardWrapper div p{
+        font-size: 1.08em;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .CardWrapper{
+        width: 90%;
+    }
+
+    .CardWrapper h2{
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .CardWrapper div p{
+        font-size: .9em;
+    }
+}

@@ -32,18 +32,19 @@
     padding-right: 10px;
 }
 
-@media (max-width: 768px) {
-    .benefitsContainer {
-        flex-direction: row;
-        justify-content: flex-start;
-    }
-}
-
 @media (max-width: 1024px) {
     .benefitsContainer img {
         height: 60px;
         width: 70px;
     }
+}
+
+@media (max-width: 768px) {
+    .benefitsContainer {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
 }
 
 @media (max-width: 480px) {

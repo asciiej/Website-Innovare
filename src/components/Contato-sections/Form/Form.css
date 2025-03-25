@@ -331,4 +331,9 @@
         padding: 0.8em;
         font-size: .8em;
     }
+
+    .icon-social a{
+        height: 45px;
+        width: 45px;
+    }
 }

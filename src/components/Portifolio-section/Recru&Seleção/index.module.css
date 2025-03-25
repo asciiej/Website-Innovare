@@ -1,7 +1,3 @@
-.RecruSelecaoSection{
-    background-color: #fcfcfc;
-}
-
 .RecruSelecaoContainer{
     height: 70vh;
     width: 100%;
@@ -18,6 +14,9 @@
     font-size: 2em;
     font-weight: 700;
     height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .RecruSelecaoContainer h1{
@@ -95,3 +94,32 @@
     justify-content: align-items;
     width: 50%;
 }
+
+@media screen and (max-width: 850px){
+    .RecruSelecaoContainer{
+        height: 120vh;
+    }
+
+    .RecruSelecaoWrapper{
+        height: 90%;
+        flex-direction: column;
+    }
+
+    .RecruSelecaoContainer h1{
+        font-size: 2.5em;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .RecruSelecaoContainer{
+        height: 150vh;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .RecruSelecaoContainer{
+        height: 170vh;
+    }
+}
+
